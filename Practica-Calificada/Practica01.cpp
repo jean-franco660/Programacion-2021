@@ -1,20 +1,20 @@
 #include<iostream>
 #include<math.h>
-#include<string.h>
 using namespace std;
 
 int main(){ 
-    int op, aJL, bJL, respJL;
-  
-	cout<<"\n1. +";
-	cout<<"\n2. -";
-	cout<<"\n3. *";
-	cout<<"\n4. /";
-	cout<<"\n5. ^\n";
-	cout<<"\nElija una opcion:\t";
+	
+	int aJL,bJL, respJL;
+	char op;
+	cout<<"\n+.";
+	cout<<"\n-.";
+	cout<<"\n*.";
+	cout<<"\n/.";
+	cout<<"\n^.\n";
+	cout<<"\nelija una opcion:\t";
 	cin>>op;
 	switch(op){
-		case 1:{
+		case '+':{
 		cout<<"ingrese el 1re Valor:";
 		cin>>aJL;
 				
@@ -23,10 +23,10 @@ int main(){
 				
 		respJL=aJL+bJL;
 				
-		cout<<"la suma es: \t"<<respJL<<endl;
-		break;
-		}
-		case 2:{
+		cout<<"la suma es:\t"<<respJL<<endl;
+		break;}
+
+		case '-':{
 			cout<<"ingrese el 1re Valor:";
 			cin>>aJL;
 				
@@ -35,10 +35,9 @@ int main(){
 				
 			respJL=aJL - bJL;
 				
-			cout<<"la resta es\t"<<respJL<<endl;
+			cout<<"la resta es:\t"<<respJL<<endl;
 			break;}
-			
-		case 3:{
+		case '*':{
 			cout<<"ingrese el 1re Valor:";
 			cin>>aJL;
 				
@@ -47,11 +46,10 @@ int main(){
 				
 			respJL=aJL * bJL;;
 				
-			cout<<"la multiplicacion es\t"<<respJL<<endl;
+			cout<<"la multiplicacion es:\t"<<respJL<<endl; 
 			break;
 		}
-		
-		case 4:{
+		case '/':{
 			cout<<"ingrese el 1re Valor:";
 			cin>>aJL;
 	
@@ -60,11 +58,10 @@ int main(){
 	
 			respJL=aJL / bJL;
 		
-			cout<<"la division es\t"<<respJL<<endl;
+			cout<<"la division es:\t"<<respJL<<endl;
 			break;
-		}
-			
-		case 5:{
+			}
+		case '^':{
 			cout<<"ingrese el 1re Valor:";
 			cin>>aJL;
 				
@@ -73,9 +70,11 @@ int main(){
 			
 			respJL=pow(aJL,bJL);
 					
-			cout<<"la potencia es\t"<<respJL<<endl;
+			cout<<"la potencia es:\t"<<respJL<<endl;
 			break;
 		}
+	
+		
 	}
 	
 	return 0;
